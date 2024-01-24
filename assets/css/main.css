@@ -16,6 +16,32 @@
   scroll-behavior: smooth;
 }
 
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	/*font-family: sans-serif;*/
+	letter-spacing: 1px; /*//gap between each letter*/
+}
+
+
+img {
+	pointer-events: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+
+}
+
+
 a {
   color: var(--color-links);
   text-decoration: none;
@@ -111,6 +137,53 @@ section {
   }
 }
 
+
+
+.slider-area {
+	padding-bottom: 20px;
+}
+
+.custom-carousel {
+	position: relative;
+}
+.carousel-item img{
+  width: 100%;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: #080d15;
+	opacity: 0.6;
+}
+
+.slider-area .carousel-inner .carousel-item {
+	/*height: 100vh;*/
+
+	height: 90vh;
+}
+
+.carousel-caption {
+	padding-bottom: 150px;
+}
+
+.carousel-caption h2 {
+	font-size: 40px;
+	font-family: "Lora", serif;
+	text-transform: uppercase;
+}
+
+.carousel-control.right {
+	background-image: none;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -164,6 +237,54 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+
+
+  	/*==============CAROUSEL ===========*/
+    .slider-area {
+      position: relative;
+      height: 600px;
+      /*top: 70px;*/
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+
+      z-index: 2;
+      background-color: #080d15;
+      opacity: 0.4;
+    }
+
+    .slider-area .carousel-inner .carousel-item {
+      height: 400px;
+    }
+
+    .slider-area .carousel-inner .carousel-item img {
+      height: 100%;
+    }
+
+    .carousel-caption {
+      padding-bottom: 120px;
+    }
+
+    .carousel-caption h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    .carousel-caption h3 {
+      font-size: 18px;
+    }
+
+    .carousel-caption h3.enquiry-text {
+      font-size: 14px;
+    }
+    
+
+    .carousel-control.right {
+      background-image: none;
+    }
+  
 }
 
 /*--------------------------------------------------------------
@@ -912,8 +1033,8 @@ section {
 
   .home-page-fullscreen{
     padding-top: 95px;
-    position: relative;
-   min-height: 100vh;
+
+    
     width: 100%;
   
   }

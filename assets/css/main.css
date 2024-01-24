@@ -206,6 +206,10 @@ section {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+ 
+
+  
 }
 
 /*--------------------------------------------------------------
@@ -216,6 +220,14 @@ section {
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
+}
+
+.home-page-fullscreen{
+  padding-top: 70px;
+  position: relative;
+ min-height: 100vh;
+  width: 100%;
+
 }
 
 .header.sticked {
@@ -270,8 +282,11 @@ section {
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
-    width: 90%;
+    /* height: 80px; */
+  align-items: center;
+    max-width: 90%;
     padding: 0;
+    margin: 0 auto;
     position: relative;
   }
 
@@ -873,10 +888,11 @@ section {
 /*--------------------------------------------------------------
 # Fullscreen Hero Section
 --------------------------------------------------------------*/
+
 .hero-fullscreen {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-fullscreen-bg.jpg") center center;
+  /* background: url("../img/hero-fullscreen-bg.jpg") center center; */
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
@@ -892,6 +908,14 @@ section {
 @media (min-width: 1365px) {
   .hero-fullscreen {
     background-attachment: fixed;
+  }
+
+  .home-page-fullscreen{
+    padding-top: 95px;
+    position: relative;
+   min-height: 100vh;
+    width: 100%;
+  
   }
 }
 

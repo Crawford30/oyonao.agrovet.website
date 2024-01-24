@@ -212,6 +212,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
+  /* width: 90%; */
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -269,6 +270,7 @@ section {
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
+    width: 90%;
     padding: 0;
     position: relative;
   }

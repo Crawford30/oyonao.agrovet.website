@@ -110,10 +110,14 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
-section {
+/* section {
   padding: 60px 0;
   overflow: hidden;
-}
+}*/
+section.about{
+  height: 100vh;
+  padding: 0 0;
+} 
 
 .section-header {
   text-align: center;
@@ -121,15 +125,17 @@ section {
 }
 
 .section-header h2 {
+  padding-top: 20%;
   font-size: 48px;
   font-weight: 300;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color: #fff;
 }
 
 .section-header p {
+  text-align: center;
   margin: 0 auto;
-  color: var(--color-secondary-light);
+  color: #fff;
 }
 
 @media (min-width: 1280px) {
@@ -141,7 +147,7 @@ section {
 
 
 .slider-area {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .custom-carousel {
@@ -273,7 +279,7 @@ section {
   /*==============CAROUSEL ===========*/
   .slider-area {
     position: relative;
-    height: 600px;
+    /* height: 600px; */
     /*top: 70px;*/
   }
 
@@ -400,7 +406,7 @@ section {
 .home-page-fullscreen {
   padding-top: 70px;
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100%;
 
 }
@@ -1307,19 +1313,59 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .about-img {
+
+
+
+.about {
   position: relative;
-  margin: 60px 0 0 60px;
+  background: url("../img/chicks.jpg"); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff; /* Set text color, adjust as needed */
+ /* Add padding for the text */
+  position: relative;
 }
 
-.about .about-img:before {
+.about::before {
+  content: "";
   position: absolute;
-  inset: -60px 0 0 -60px;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.about .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about .section-header {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional: Adjust other styles as needed */
+.about .section-header h2 {
+  font-size: 36px;
+}
+
+.about .section-header p {
+  font-size: 18px;
+}
+/* .about .about-img {
+  position: relative;
+
+}
+
+.about .about-img {
+  position: absolute;
   z-index: -1;
   content: "";
-  background: url("../img/about-bg.png") top left;
+  background: url("../img/about-bg.png");
   background-repeat: no-repeat;
-}
+} */
 
 @media (max-width: 575px) {
   .about .about-img {

@@ -98,13 +98,13 @@ h6 {
     opacity: 1;
   }
 
-  100% {
+  /* 100% {
     width: 72px;
     height: 72px;
     top: calc(50% - 36px);
     left: calc(50% - 36px);
     opacity: 0;
-  }
+  } */
 }
 
 /*--------------------------------------------------------------
@@ -397,7 +397,8 @@ section.about {
 # Header
 --------------------------------------------------------------*/
 .header {
-  /* width: 90%; */
+  height: 70px;
+  position: fixed;
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -804,6 +805,10 @@ section.about {
   .hero-animated .animated {
     max-width: 45%;
   }
+
+  /* .home-page-fullscreen.about-us{
+    top: 70px;
+  } */
 }
 
 @media (max-width: 991px) {

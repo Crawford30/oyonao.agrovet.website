@@ -125,7 +125,7 @@ section.about {
 }
 
 .section-header h2 {
-  padding-top: 20%;
+  padding-top: 10%;
   font-size: 48px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -1281,6 +1281,51 @@ section.about {
   }
 }
 
+
+
+
+/*--------------------------------------------------------------
+# Our Services Section
+--------------------------------------------------------------*/
+
+.our-services {
+  padding: 80px 0;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.single-service {
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 300px;
+}
+
+.single-service i {
+  font-size: 48px;
+  color: var(--color-primary); /* Change this to your primary color */
+  margin-bottom: 15px;
+}
+
+.single-service h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.single-service p {
+  font-size: 16px;
+  color: #777;
+}
+
+
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
@@ -1340,10 +1385,31 @@ section.about {
   background-position: center center;
   background-size: cover;
   color: #fff;
-  /* Set text color, adjust as needed */
-  /* Add padding for the text */
-  position: relative;
 }
+
+
+.our-services-div {
+  position: relative;
+  background: url("../img/vaccination-pic.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  padding: 60px
+
+}
+
+.our-services-div::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+
 
 .about::before {
   content: "";
@@ -1354,22 +1420,22 @@ section.about {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.about .container {
+.about .container, .our-services-div .container {
   position: relative;
   z-index: 1;
 }
 
-.about .section-header {
+.about .section-header, .our-services-div .container {
   position: relative;
   z-index: 2;
 }
 
 /* Optional: Adjust other styles as needed */
-.about .section-header h2 {
+.about .section-header h2, .our-services-div .section-header h2 {
   font-size: 36px;
 }
 
-.about .section-header p {
+.about .section-header p , .our-services-div .section-header p{
   font-size: 18px;
 }
 
@@ -1388,6 +1454,9 @@ section.about {
 
 @media (max-width: 575px) {
   .about .about-img {
+    margin: 30px 0 0 30px;
+  }
+  .our-services-div .about-img {
     margin: 30px 0 0 30px;
   }
 

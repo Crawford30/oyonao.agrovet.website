@@ -1,0 +1,16 @@
+{
+  "name": "oyonao.agrovet.website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/Crawford30/oyonao.agrovet.website",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

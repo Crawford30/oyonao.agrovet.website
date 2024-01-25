@@ -406,7 +406,7 @@ section.about {
 .home-page-fullscreen {
   padding-top: 70px;
   position: relative;
-  /* min-height: 100vh; */
+  /* min-height: 90vh; */
   width: 100%;
 
 }
@@ -1109,11 +1109,19 @@ section.about {
 
   }
 
+
+  .kenbro-page-fullscreen {
+    padding-top: 95px;
+    width: 100%;
+  }
+  .kenbro-page-fullscreen.about-us {
+    margin-top: 0px;
+
+  }
+
   .home-page-fullscreen {
     padding-top: 95px;
-
     width: 100%;
-
   }
 }
 
@@ -1438,6 +1446,82 @@ section.about {
 .about .section-header p , .our-services-div .section-header p{
   font-size: 18px;
 }
+
+
+/*--------------------------------------------------------------
+# Kenbro Single Section
+--------------------------------------------------------------*/
+
+.kenbro-section {
+  position: relative;
+  background: url("../img/broiler-chicken-grown.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  padding: 60px
+
+}
+
+.kenbro-section::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.about-kenbro{
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/*--------------------------------------------------------------
+# Layer Single Section
+--------------------------------------------------------------*/
+
+.layer-section {
+  position: relative;
+  background: url("../img/layer-chicken.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  padding: 60px
+
+}
+
+.layer-section::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.about-layer{
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+
+/*--------------------------------------------------------------
+# Boilers Single Section
+--------------------------------------------------------------*/
 
 /* .about .about-img {
   position: relative;

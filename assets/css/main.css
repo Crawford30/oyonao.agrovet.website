@@ -332,6 +332,12 @@ section.about {
     z-index: 997;
   }
 
+  .carousel-item img {
+    height: 100% !important;
+}
+
+
+
   /* .carousel-caption {
       padding-bottom: 140px;
     } */
@@ -403,6 +409,10 @@ section.about {
     transition: all 0.5s;
     z-index: 997;
   }
+
+  .carousel-item img {
+    height: 100% !important;
+}
 
 
 

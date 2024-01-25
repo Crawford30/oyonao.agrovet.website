@@ -396,12 +396,20 @@ section.about {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 .header {
-  /* width: 90%; */
+  height: 70px;
+  position: fixed;
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
 }
+
+/* .header {
+  padding: 15px 0;
+  transition: all 0.5s;
+  z-index: 997;
+} */
 
 .home-page-fullscreen {
   padding-top: 70px;

@@ -276,6 +276,7 @@ section.about {
   }
 
 
+
   /*==============CAROUSEL ===========*/
   .slider-area {
     position: relative;
@@ -321,6 +322,14 @@ section.about {
 
   .carousel-caption h3.enquiry-text {
     font-size: 12px;
+  }
+
+
+  .header {
+    height: 80px;
+    padding: 15px 0;
+    transition: all 0.5s;
+    z-index: 997;
   }
 
   /* .carousel-caption {
@@ -388,6 +397,12 @@ section.about {
     transition-delay: 0 !important;
   }
 
+  .header {
+    height: 70px;
+    padding: 15px 0;
+    transition: all 0.5s;
+    z-index: 997;
+  }
 
 
 
@@ -398,8 +413,6 @@ section.about {
 --------------------------------------------------------------*/
 
 .header {
-  height: 70px;
-  position: fixed;
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -477,13 +490,23 @@ section.about {
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
-    /* height: 80px; */
+
+    /* height: 90px; */
+    position: fixed;
     align-items: center;
     /* max-width: 90%; */
     max-width: 75%;
     padding: 0;
     margin: 0 auto;
     position: relative;
+
+    /* height: 80px; */
+    /* align-items: center; */
+    /* max-width: 90%; */
+    /* max-width: 75%;
+    padding: 0;
+    margin: 0 auto;
+    position: relative; */
   }
 
   .navbar ul {

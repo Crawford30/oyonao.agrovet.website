@@ -320,6 +320,21 @@ section.about {
     font-size: 16px;
   }
 
+  .carousel-caption h4 {
+    font-size: 14px;
+  }
+
+  /* .days-inside-text-two{
+    font-size: 10px !important;
+  } */
+
+  /* .days-on-inside .days-inside-text {
+    font-size: 10px !important;
+  }
+ .days-inside-text {
+  font-size: 10px !important;
+  } */
+
   .carousel-caption h3.enquiry-text {
     font-size: 12px;
   }
@@ -413,6 +428,14 @@ section.about {
   .carousel-item img {
     height: 100% !important;
 }
+
+
+/* .carousel-caption.days-on-insid h2 {
+  font-size: 20px;
+}
+.carousel-caption.days-on-insid h4 {
+  font-size: 10px;
+} */
 
 
 
@@ -845,6 +868,9 @@ section.about {
   .hero-animated .animated {
     max-width: 45%;
   }
+
+  
+  
 }
 
 @media (max-width: 991px) {
@@ -1499,7 +1525,7 @@ section.about {
 
 .kenbro-section {
   position: relative;
-  background: url("../img/broiler-chicken-grown.jpg") center center;
+  background: url("../img/kenbro-chicks.jpg") center center;
   background-repeat: no-repeat;
   /* background-position: left top; */
   background-size: cover;
@@ -2708,6 +2734,22 @@ section.about {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
+/* .contact-us-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+} */
+
+.section-header-contact-us {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
 .contact .map {
   margin-bottom: 40px;
 }
@@ -2715,7 +2757,7 @@ section.about {
 .contact .map iframe {
   border: 0;
   width: 100%;
-  height: 400px;
+  height: 600px;
 }
 
 .contact .info {
@@ -2816,7 +2858,7 @@ section.about {
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
-  border-radius: 0px;
+  border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
 }
@@ -2840,11 +2882,12 @@ section.about {
 
 .contact .php-email-form button[type=submit] {
   background: var(--color-primary);
+  margin-bottom: 30px;
   border: 0;
   padding: 13px 50px;
   color: var(--color-white);
   transition: 0.4s;
-  border-radius: 0;
+  border-radius: 4px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
